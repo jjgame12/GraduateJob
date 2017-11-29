@@ -1,0 +1,3 @@
+﻿wsl的gcc有bug,   printf("%f", double(a));//报错
+访问指针也有一定问题！！！
+教研室电脑test7 wsl
