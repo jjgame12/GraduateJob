@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lpaCluster1", "lpaCluster1.vcproj", "{4729EA43-2A27-482B-8752-73735748E9DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4729EA43-2A27-482B-8752-73735748E9DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4729EA43-2A27-482B-8752-73735748E9DD}.Debug|Win32.Build.0 = Debug|Win32
+		{4729EA43-2A27-482B-8752-73735748E9DD}.Release|Win32.ActiveCfg = Release|Win32
+		{4729EA43-2A27-482B-8752-73735748E9DD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
