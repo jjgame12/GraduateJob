@@ -5,6 +5,9 @@
 为查找到的论文：
 An Efficient Large Graph Clustering Technique based on Min-Hash
 
+问题：
+聚集程度？ 最短距离？  衡量小世界网络的特性，能否通过这两个属性来重新划分最优社团模块？？
+
 
 
 目前数据挖掘中用到的聚类方法：
