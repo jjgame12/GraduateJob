@@ -1,0 +1,10 @@
+社团渗透:"Uncovering overlapping community structure of complex networks in nature and society"
+边划分:"基于链接密度聚类的重叠社区发现算法"
+局部扩张:"邻域粗糙化的启发式重叠社区扩张方法"
+模糊聚类:"Fuzzy overlapping community detection based on local random walk and multidimensional scaling"
+标签传播:"Finding overlapping communities in networks by labelpropagation"  ??
+CPM:"Uncovering the overlapping community structure of complex networks in nature and society"
+CORPA:"Finding overlapping communities in networks by label propagetion"  ??
+LFM:"Detecting the overlapping and hierarchical community structure of complex networks"
+SLPA:"Uncovering overlapping communities in social networks via a speaker-listener interaciton dynamic process"
+MLPA:"Detecting overlapping communities by multi-label propagation approach"

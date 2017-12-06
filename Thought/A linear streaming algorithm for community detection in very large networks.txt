@@ -1,0 +1,31 @@
+edge streams??   标签传播么？
+
+目前处理社团发现的缺陷：针对大规模社交网络一般是不能处理的（？？）  是指时间效率无法接受么？
+
+图的社团发现算法总结："Community detection in graphs"
+
+除了Modularity以外的社团度量方式：conductance. outdegree fraction . clustering coefficient——"Defining and evaluating network communities based on ground-truth"
+
+传统最优化目标函数的方法在时间上有大的消耗
+
+谱聚类：
+"Spectral partitioning works:planar graphs and finite element meshes"
+"A tutorial on spectral clustering"
+
+clique percolation:"Uncovering the overlapping community structure of complex networks in nature and society"
+
+statistical inference:"Statistical significance of communities in networks"
+
+matrix factorization: "Overlapping community detection at scale: a nonnegative matrix factorization approach"
+
+基于流的方法：
+Graph stream algorithms: a survey
+
+2.2：理论证明！
+conductance可以衡量社团，好社团其值小——"Normalized cuts and image segmentation"
+文中某个参数与conductance很接近，前提是conductance小的情况下！！！
+从理论上证明了如果社团结构很好，质量很好，那么任意选取k条边的情况下，k越小，就越不容易选到连接社团间的边，即选到的边更可能是社团内部的。
+
+具体做法我的感觉有标签传播的影子，但不是对所有点统计统计临近标签来更新标签，而是直接取相连的关系来更新传播标签，感觉更侧重于传播这一概念
+
+

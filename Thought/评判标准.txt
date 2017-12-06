@@ -1,0 +1,12 @@
+非重叠社团：
+Modularity   Q
+NMI    和已知社团对比相似度
+
+重叠社团：
+Qov——"Extending the definition of modularity to directed graphs with overlapping communities"
+
+注意：我的第一个点是数据挖掘类型，要用定量的数据参数来验证挖掘效果的好坏，而不能仅仅从可视化的角度去看软件的成图效果的酷炫
+
+社团挖掘可以简化后续的布局过程。 且社团挖掘可能会增加布局的可视化效果。
+
+能不能综合社团挖掘改进一个基于社团的优化节点的布局算法？

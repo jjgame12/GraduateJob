@@ -1,0 +1,48 @@
+缺点：对于模糊的社团结构，发现的社团往往是一个完整的社团，失去了发现社团的意义。网络结构明显才能迅速找出网络结构。
+
+模块化标签传播算法：避免大社区的形成——"Detecting network communities by propagating labels under constraints"
+
+提高稳定性和准确性，使用更新排序：    "Community detection using label propagation in entropic order"
+
+基于模块密度优化的标签传播算法：核心思想就是每次更新标签时选择使模块度增长最多的那个标签号并更新该标签。
+
+《基于标签传播的社区发现算法研究》——汪焱
+
+社团评价方式：
+1）Modularity
+延伸的定义重叠社团的Modularity——"Extending the definition of modularity to directed graphs with overlapping communities"
+2）标准化互信息NMI——"Comparing community structure identification" 通过比较已知真实网络的社区结构和算法得到的社区结构间的匹配度实现网络
+社区结构质量的测度，值越大结果的匹配度越高。
+
+随机选择的改进：
+避免更新时目标函数最优化出现相同的值随机舍去的问题，优化的方法有：
+基于模块度来更新标签传播lpam——"Detecting network communities by propagating labels under constraints"
+结合lpam与多步贪心聚合，避免陷入局部最大值lpam+ —— "Advanced modularity-specialized label propagation algorithm for detecting communities in networks"
+平衡标签传播bpa——"Robust network community detection using balanced propagation"
+
+
+同步和异步更新：同步容易产生震荡循环，异步可以解决。
+但异步更新速度慢，因为同步可以并发同时更新，t次迭代使用的是t-1次的标签，而异步t次迭代时，必须一个个节点串行更新标签，且稳定性差。
+但异步传播速度更快。
+
+
+"Towards real-time community detection in large networks":
+所以异步可能会形成怪兽社区，即所有节点同标签。采用衰减参数控制标签传播的距离，随着标签传播距离该参数递减，限制怪兽社区的形成。
+注：同步的方式也可能形成怪兽社区。
+
+作者的改进：
+基于影响力半同步标签传播算法：初始化策略优先选择影响力较大的节点，   这个对标签传播有什么影响吗？感觉没意义啊？？
+
+另一个改进是针对标签更新过程进行改进，选取影响力最大的标签
+
+针对幂率分布明显的网络，其Q值更大（验证优秀性）
+
+
+基于选举标签传播的社区挖掘算法：
+对标签算法的传播规则进行改进。
+
+已有的对传播规则改动的文章：
+SLPA——《Uncovering overlapping communities in social networks via a speaker-listener interaction dynamic process》
+且迭代后的历史标签序列会被记录下来，过滤历史标签，完成重叠社区的划分
+
+本文的标签在初始化时并不是所有节点都拥有标签号，随着迭代的进行，只有最开始初始化的标签号存在，后面都是合并融合等。
